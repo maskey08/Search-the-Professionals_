@@ -1,0 +1,134 @@
+/* home.css */
+
+:root {
+  --primary: #6a5acd; /* slate blue */
+  --secondary: #48c6ef; /* sky blue */
+  --accent: #e94560; /* coral red */
+  --light: #f9f9fb;
+  --dark: #2e2e48;
+}
+
+/* Page wrapper */
+.homepage-wrapper {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top navigation */
+.top-navigation {
+  background: var(--dark);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero section */
+.hero-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
+.quote {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.quote-context {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+/* Search input */
+.hero-wrapper input[type="text"] {
+  width: 60%;
+  max-width: 500px;
+  padding: 0.8rem 1rem;
+  margin: 1.5rem 0;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Search tags */
+.search-tags {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.pills {
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  background: white;
+  color: var(--dark);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.pills:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.pills.selected {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+/* Results */
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* User cards */
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--dark);
+  margin: 0.2rem 0;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
