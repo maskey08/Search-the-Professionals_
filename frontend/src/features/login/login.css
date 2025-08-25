@@ -1,5 +1,11 @@
 /* login.css */
-
+.page {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #667eea;
+}
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;

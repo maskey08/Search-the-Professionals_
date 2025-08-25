@@ -1,5 +1,11 @@
 /* home.css */
-
+.body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  border: 5px solid black;
+  height: 100vh;
+}
 :root {
   --primary: #6a5acd; /* slate blue */
   --secondary: #48c6ef; /* sky blue */
@@ -7,7 +13,9 @@
   --light: #f9f9fb;
   --dark: #2e2e48;
 }
-
+.root {
+  width: 100vw;
+}
 /* Page wrapper */
 .homepage-wrapper {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

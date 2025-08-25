@@ -1,11 +1,10 @@
 /* profile.css */
-* {
+.page {
   margin: 0;
   padding: 0;
 }
 .profile-main-container {
   width: 75%; /* takes 75% of screen width */
-  max-width: 12000px; /* optional: cap it for very large screens */
   margin: 0rem auto;
   padding: 2rem;
   background: #fff;

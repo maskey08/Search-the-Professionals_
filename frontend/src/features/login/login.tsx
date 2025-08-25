@@ -38,40 +38,42 @@ export default function Login() {
   };
 
   return (
-    <div className="login-container">
-      <form className="login-form" onSubmit={handleSubmit} action="">
-        <h1 className="login-title">Login</h1>
-        <input
-          className="login-input"
-          placeholder="username"
-          name="username"
-          onChange={handleChange}
-          value={formData.username}
-          type="text"
-        />
-        <input
-          className="login-input"
-          placeholder="password"
-          name="password"
-          onChange={handleChange}
-          value={formData.password}
-          type="text"
-        />
-        <button className="login-button" type="submit">
-          Submit
-        </button>
-        <span onClick={() => navigate("/home")}></span>
+    <div className="page">
+      <div className="login-container">
+        <form className="login-form" onSubmit={handleSubmit} action="">
+          <h1 className="login-title">Login</h1>
+          <input
+            className="login-input"
+            placeholder="Username"
+            name="username"
+            onChange={handleChange}
+            value={formData.username}
+            type="text"
+          />
+          <input
+            className="login-input"
+            placeholder="Password"
+            name="password"
+            onChange={handleChange}
+            value={formData.password}
+            type="text"
+          />
+          <button className="login-button" type="submit">
+            Submit
+          </button>
+          {/* <span onClick={() => navigate("/home")}></span> */}
 
-        <p className="switcher">
-          Don’t have an account?{" "}
-          <span
-            onClick={() => navigate("/register")}
-            style={{ color: "blue", cursor: "pointer" }}
-          >
-            Register here
-          </span>
-        </p>
-      </form>
+          <p className="switcher">
+            Don’t have an account?{" "}
+            <span
+              onClick={() => navigate("/register")}
+              style={{ color: "blue", cursor: "pointer" }}
+            >
+              Register here
+            </span>
+          </p>
+        </form>
+      </div>
     </div>
   );
 }
